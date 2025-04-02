@@ -80,7 +80,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Update this if your frontend is deployed elsewhere
+    // origin: "http://localhost:5173", // Update this if your frontend is deployed elsewhere
+    origin: "https://connet-peer.onrender.com", // Update this if your frontend is deployed elsewhere
     methods: "GET,POST,PATCH,DELETE",
     allowedHeaders: "Content-Type, Authorization",
     credentials: true,
